@@ -1,0 +1,88 @@
+body{
+    background-color: #ffffff;
+}
+
+#page-produtos {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+main {
+    margin: 100px 48px 48px 48px;
+}
+
+main .colecao {
+    text-align: center;
+    margin: 40px;
+}
+
+main .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 100px;
+}
+
+main .card {
+    height: 290px;
+    background-color: #ffffff;
+    border-style: solid;
+    border-color: #f5f5f0;
+    border-width: 2px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+
+    transition: 400ms;
+}
+
+main .card .detalhada {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 400ms;
+}
+
+main .card:hover{
+    border-color: #000000;
+}
+
+main .card:hover .detalhada{
+    visibility: visible;
+    opacity: 1;
+}
+
+main img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+main .card .desc {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 10px 0 10px;
+}
+
+main .card h1{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+main .card h3 {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+main .card a {
+    flex: 1;
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+}

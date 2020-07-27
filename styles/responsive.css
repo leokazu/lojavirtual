@@ -1,0 +1,10 @@
+
+@media (max-width:900px) {
+    body {
+        background-color: #000000;
+    }
+
+    main .cards {
+        grid-template-columns: 1fr;
+    }
+}
